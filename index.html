@@ -1,0 +1,779 @@
+ <html>
+	<head>
+		<title>MY DUSTBIN</title>
+		
+		<style type=text/css>
+			
+			body {
+				padding: 0px;
+				margin: 0px;
+				height: 100vh;
+				
+			
+			}
+			
+			#homepage{
+					float: right;
+					margin-right: 10%;
+					margin-bottom: 1%;
+					font-size: 20px;
+					color: red;
+					cursor: pointer;
+					
+			}
+			
+			#homepage a{
+					text-decoration: none;
+					color: red;
+			}
+									/*HEADER*/
+			#head-container{
+					height: 12%;
+					width: 100%;
+					background:linear-gradient(30deg,lightgray 10%,#28a745 100%);
+					
+					
+			}			
+			
+						
+			#header-right {
+			
+				height: 100%;
+				width: 70%;
+				float: left;
+						
+			}
+			
+			#header-right ul {
+					float: left; 
+					width: 85%;
+					margin-top: 3%;
+					margin-left: -2%;
+			}
+			
+			#header-right ul li {
+					display: inline;
+					list-style-type: none;
+					margin-left: 4%;
+				
+					
+			}
+			
+			#header-right ul li a {
+					text-decoration: none;
+					color: black;
+					font-weight: 550;
+					font-size: 20px;
+					cursor: pointer;		
+					font-family: 'open sans',sans-serif;
+			}
+			
+			#header-right button {
+					float: left;
+					height: 50px;
+					width: 100px;
+					margin-top: 1.5%;
+					font-size: 20px;
+					font-weight: bold;
+					border-radius: 10px;
+					cursor: pointer;
+					color: white;
+					background: #ffa500;
+					border-style: none;
+			}
+			
+			
+			#logo-name {
+					float: left;
+					font-size: 28px;
+					margin-top: 6%;
+					cursor: pointer;
+					font-family: 'poppins', sans-serif;
+					
+			}	
+			
+			#logo-name a{
+					text-decoration: none;
+					color: black;
+					
+			}	
+			
+						
+			#logo img {
+				height: 80px;
+				width: 80px;
+				padding: 0px;
+				float: left;
+				cursor: pointer;
+			}
+			
+			#header-left {
+				height: 100%;
+				width: 30%;
+				float: left;
+			
+			}
+										/*SLIDE AREA*/
+			#image{
+				width: 100%;
+				height: 60%; 
+				background: #FFFAF3;	
+				float: left;		
+			}
+			
+			#image img{
+				width: 60%;
+				height: 100%;
+				margin: 0% 20%;
+			}					
+								/*BOOK NOW AREA*/
+			#section{
+				width: 100%;
+				height: 30%;
+				float: left;
+				background: #FFFAF3;
+				
+			}
+			
+			#section  h1{
+				font-size: 45px;
+				font-family: sans-serif;
+				display: inline-block;
+				margin-left: 30%;
+				margin-top: 0%;
+				
+			}
+			
+			 #section p {	
+			 		margin-top: -1.5%;
+					text-align: center;
+					font-size: 30px;
+					font-family: 'open sans',sans-serif;
+					word-spacing: 10px;
+
+			}
+			#section button{
+					margin-left: 43%;
+					height: 25%;
+					width: 13%;
+					font-size: 25px;
+					color: white;
+					background: green;
+					border-radius: 10px;
+					border-style: none;
+					margin-top: -15px;
+					cursor: pointer;			
+			}
+			
+			#section button a{
+					text-decoration: none;
+					color: white;
+					
+			
+			}
+			
+												/*HOW IT WORK AREA*/
+			#middle {
+					float: left;
+					width: 100%;
+					height: 100%;
+					background:#e5e5e5;
+			}
+			
+						
+			#middle h1{
+					font-size: 45x;
+					display: inline-block;
+					margin-left: 42.5%;
+					margin-bottom: 2%;
+					font-family: 'Montserrat',sans-seif;
+			}
+			
+					
+			#middle-content{
+					width: 100%;
+					float: left;
+			}
+			
+			.img{
+				float: left;
+				margin-left: 14%;
+				margin-top: 1%;
+				width: 15%;
+				height: 30%;
+												
+			}
+		
+			.png{
+				width: 40%;
+				height:50%;
+				margin-left: 25%;
+						
+			}
+			
+			#pick{
+				width:50%;
+				height: 60%;
+			}
+			
+			.img p{
+				text-align: center;
+				font-family: 'open sans',sans-serif;
+				font-size: 30px;
+
+			}
+			
+			#list{
+				float: left;	
+				font-size:25px;
+				font-weight:500;
+				text-align: justify;
+				align: center;
+				width: 90%;	
+				padding-left: 5%;		
+			}	
+			
+			#list ol li{
+					line-height: 50px;
+					font-family: 'open sans',sans-serif;
+
+			}
+								/*OUR SERVICE AREA*/
+			#service{
+					width: 100%;
+					height:100%;
+					float: left;
+					background: #d9ead3;
+				}	
+			
+			#div {
+					width: 100%
+					height: 100%;
+					
+					
+			}	
+			
+			#div1{
+					width: 100%;
+					height: 45%;
+					float: left;
+			}
+			
+			#div2{
+					width: 100%;
+					height: 45%;
+					float: left;
+			}
+				
+			
+			.first{
+					width: 25%;
+					height: 97%;
+					float:left;
+					margin: 0% 4%;
+					border-radius: 10px;
+					padding-left: 0.1%;
+					cursor: pointer;
+					background: white;
+			}
+			
+			.first:hover{
+					background: #FEFAF3;
+			}
+			
+			.first img{
+					width: 90%;
+					height: 80%;
+					margin: 2% 5%;
+					border-radius: 10px;
+			}
+			.first p{
+					display: inline;
+					font-weight: bold;
+					font-size: 20px;
+					margin-left: 7%;
+					font-family: 'open sans',sans-serif;
+					color: #355e3b;
+					
+			}
+			
+			#service h2{
+					font-size: 30px;
+					display: inline-block;
+					margin-left: 43%;
+					margin-bottom: 1%;
+					font-family: 'Montserrat',sans-seif;
+					color: black;
+					margin-top:1%;
+
+			}
+							/*About us area*/
+							
+							
+			#about{
+				width: 100%;
+				height: 100%;
+				float: left;
+				background: #e0f7fa;
+			}
+			
+			#about h2{
+				font-size: 30px;
+					display: inline-block;
+					margin-left: 43%;
+					margin-bottom: 1%;
+					font-family: 'Montserrat',sans-seif;
+
+			}
+			
+			#p{
+					font-size: 25px;
+					text-align: justify;
+					margin: 0 5%;
+					line-height: 45px;
+					font-family: 'open sans',sans-serif;
+					color: 2f2f2f;
+			}
+			
+			#about ul li{
+					font-family: 'open sans',sans-serif;
+					font-size: 24px;
+					line-height: 25px;
+					margin: 2% 7%;
+					color: 2f2f2f;
+			}
+			
+			#about h3{
+					font-size: 25px;
+					margin-left: 5%;
+					font-family: 'Montserrat',sans-seif;
+
+			}
+			
+							/*Customer Care*/
+			
+			#costumer{
+					float: left;
+					width: 100%;
+					height: 100%;
+					background: #f5f5dc;
+					}	
+			
+			#costumer-content{
+					float: left;
+					width: 100%;
+					height: 50%;
+					
+				}
+			
+			#costumer-content hr{
+					height: 1.5%;
+					background: linear-gradient(to right,red,blue);
+					width: 40%;
+					margin-top:-1%;
+					margin-bottom: 1%;
+
+					
+			}
+			
+			#costumer-content h1{
+			
+					font-size: 30px;
+					display: inline-block;
+					margin-left: 42%;
+					margin-bottom: 2%;
+					font-family: 'Montserrat',sans-seif;
+		
+			}
+			
+			#p2{
+							margin: 0% 8%;
+							font-size: 25px;
+							line-height: 40px;
+							text-align: justify;
+							font-family: 'open sans',sans-serif;
+							color: #6e5f3c;
+			}
+			
+			#query,#map{
+					float: left;
+					width: 50%;
+					height: 50%;
+			}			
+					
+			#query{
+						
+				}
+			
+			#query h2{
+					text-align: center;
+					font-size: 30px;
+					padding: 0;
+					
+					font-family: 'Montserrat',sans-seif;
+
+			}	
+			
+			#query ul li{
+					list-style-type: none;
+					line-height: 45px;
+					font-weight: bold;
+					font-size: 20px;
+					color: #6e5f3c;
+					font-family: 'open sans',sans-serif;
+					
+			}
+			
+			#query ul li a{
+					text-decoration: none;
+					color: #6e5f3c;
+
+					
+			}
+			
+			
+			#map{
+					
+			}	
+			
+			#map iframe{
+					width:100%;
+					height:100%;
+			
+			}
+			
+						/*summary area*/
+						
+			#summary{
+					width: 100%;
+					height: 70%;
+					float: left;
+					background: #1c1c1c;
+			
+			}
+			
+			.summary-content{
+					margin-left: 2.5%;
+					margin-top: 4%;
+					float: left;
+					height: 80%;
+					width: 30%;
+			
+			}
+			
+			.summary-content h2{
+				font-size: 30px;
+				margin-left: 5%;
+				margin-top: -1%;
+				font-family: 'Montserrat',sans-seif;
+				color: white;
+				
+			}
+			
+			.summary-content hr{
+					background: red;
+					width: 20%;
+					height: 1%;
+					border-radius: 5px;
+					margin-left: 5%;
+					margin-top: -5%;
+					
+			}
+			
+			#logo2 img{
+				height: 80px;
+				width: 80px;
+				padding: 0px;
+				float: left;
+				cursor: pointer;
+				margin-top: 0%;
+			}
+			
+			#logo-name2{
+					font-size: 28px;
+					margin-top: 8.5%;
+					cursor: pointer;
+					color: white;
+
+			}
+			
+			#logo-name2 a{
+					text-decoration: none;
+					color: white;
+
+
+			}
+		
+			
+			#sumabout p{
+					font-size: 20px;
+					line-height: 30px;
+					margin: 7% 5%;
+					text-align: justify;
+					font-family: 'open sans',sans-serif;
+					color: white;
+
+			}
+			
+			.summary-content ul{
+					width: 40%;
+					height: 80%;
+					margin-top: 5%;
+					float: left;		
+			}
+						
+			.summary-content ul li{
+					list-style-type: none;
+					line-height: 40px;
+					text-align: left;
+					font-family: 'open sans',sans-serif;
+					
+
+			}
+			
+			.summary-content ul li a{
+					text-decoration: none;
+					color: white;
+					font-weight: bold;
+					font-size: 20px;
+			}
+			
+			#suminfo p{
+					line-height: 25px;
+					margin: 7% 3%;
+					font-weight: bold;
+					font-size: 20px;
+					font-family: 'open sans',sans-serif;
+					color: white;
+
+			}
+			
+			#suminfo p a {
+					text-decoration: none;
+					color: white;
+
+			}
+			
+								/*footer area*/
+			
+			#footer{
+					width: 100%;
+					float: left;
+					height:10%;
+					background: #111111;
+			}
+			
+			#footer p {
+					text-align: center;
+					font-weight: bold;
+					font-size: 20px;
+					font-family: 'open sans',sans-serif;
+					color:white;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div id="head-container">
+			<div id="header-left">
+				<a href="index.html" id="logo"><img src="logo1.png"/></a>
+				<h2 id="logo-name"><a href="index.html">MY DUSTBIN</a></h2>
+				
+			</div>
+		
+			<div id="header-right">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#middle">How It Works</a></li>
+					<li><a href="#service">Services</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#costumer">Costumer Care</a></li>
+					<li><a href="mailto:abc@gmail.com?subject=Help&cc=xyz@gmail.com&bcc=jkl@gmailcom">Mail Us</a></li>
+				</ul>
+					
+					<button id="head-btn">Login</button>
+			</div>
+		</div>
+		
+		<div id="image">
+			<img src="image.jpeg"/>
+		</div>
+		
+		
+		<div id="section">
+			<h1>Doorstep Garbage Pickup</h1>
+			<p>Fast,Clean,Reliable</p>
+
+						
+			<button><a href="#service">Book Now</a></button>
+		</div>
+											<!--How it Works section-->
+		<div id="middle">
+			<h1><u>How It Works</u></h1>
+			<p id="homepage"><a href="index.html">Back to Homepage</a></p>
+				<div id="middle-content">
+					<div id="Home" class="img">
+						<img src="home.png" class="png"/>
+						<p>Enter Your Address</p>
+					</div>
+
+					<div id="time" class="img">
+						<img src="time.png" class="png"/>
+						<p>Choose a Pickup Time</p>
+					</div>
+						<div class="img">
+						<img src="truck.png" class="png" id="pick"/>
+					<p>We Pick it Up</p>
+					</div>
+				</div>
+				<div id="list">
+						<h2>Steps:-</h2>
+					<ol type="1">
+						<li>Enter your address, select a pickup time, and relax.</li>
+						<li>Our team arrives at your location on schedule, collects your garbage, and disposes of it safely.</li>
+						<li>It’s a simple, convenient, and eco-friendly way to manage waste without any hassle.</li>
+						<li>Clean living starts with just a few clicks!</li>
+					</ol>
+				</div>
+		</div>
+									<!--Services section-->
+		
+		<div id="service">
+			<h2><u>Our Services</u></h2>
+			<p id="homepage"><a href="index.html">Back to Homepage</a></p>
+
+				<div id="div">
+					<div id="div1">
+						<div class="first">
+							<img src="Daily.jpg"/>
+							<p>Daily/Weekly Household Waste</p>
+							<p> Pickup </p>
+						</div>
+						<div class="first">
+							<img src="Bulk.jpg"/>
+							<p>Bulk Waste Collection </p>
+						</div>
+						<div class="first">
+							<img src="Recyclable.jpg"/>
+							<p>Recyclable Waste Pickup </p>
+						</div>
+
+					
+					
+					</div>
+					<div id="div2">
+						<div class="first">
+							<img src="Green.jpg"/>
+							<p>Green Waste Disposal</p>
+						</div>
+						<div class="first">
+							<img src="Ewaste.jpg"/>
+							<p>E-Waste Pickup </p>
+						</div>
+						<div class="first">
+							<img src="Commerical.jpg"/>
+							<p>Commercial Waste Collection</p>
+						</div>
+
+
+					
+					</div>
+				</div>
+		</div>
+		
+							<!--About us area-->
+							
+		<div id="about">
+			<h2><u>About Us</u></h2>
+			<p id="homepage"><a href="index.html">Back to Homepage</a></p>
+
+			<p id="p">We are a modern waste management service dedicated to keeping your surroundings clean and hassle-free. Our mission is simple — to make garbage pickup convenient, reliable, and eco-conscious for every household and business. With a passionate team, smart scheduling, and a focus on sustainability, we’re redefining how cities stay clean. Whether it’s daily waste, recyclables, or bulk items, we ensure safe and timely disposal. Join us in building a cleaner, greener future — one pickup at a time.		</p>
+			
+			<h3><u>Our Other Services:-</u></h3>
+			<ul>
+				<li><b>Doorstep Pickup Scheduling</b> – Flexible pickup times based on user convenience.</li>
+				<li><b>Special Event Waste Management</b> – Temporary waste services for parties, functions, and events.</li>
+				<li><b>Sanitary and Medical Waste Handling</b> – Safe disposal of hygiene and minor medical waste (optional based on local rules).</li>
+				<li><b>Plastic-Free Awareness & Support</b> – Educating and helping customers reduce plastic waste.</li>
+				
+			</ul>
+		</div>			
+					
+									<!--Customer area-->
+									
+									
+			<div id="costumer">
+				<div id="costumer-content">
+					<h1><u>Costumer Care</u></h1>
+					
+					<p id="homepage"><a href="index.html">Back to Homepage</a></p>
+					<p id="p2">Your satisfaction is our top priority. Our dedicated customer care team is here to assist you with any questions, pickup requests, or issues you may have. Whether you need help scheduling a pickup, tracking service, or understanding our waste policies — we’re just a call or message away. We believe in fast, friendly, and reliable support to ensure your experience is always smooth and stress-free. Clean homes, happy customers — that’s our promise.</p>
+				
+				
+				</div>
+				<div id="query">
+					<h2><u>Contact Options</u></h2>
+					<ul>
+						<li>📱 Phone Number:&nbsp<a href="tel:+916548975332">+916548975332</a></li>
+						<li>📧 Email Support:&nbsp<a href="mailto:abc@gmail.com?subject=Help&cc=xyz@gmail.com&bcc=jkl@gmail.com">abc@gmail.com</a></li>
+						<li>📍 Office Address:&nbsp Ashiyana More, Adityapur, Jamshedpur, Jharkhand- 832109</li>
+						<li>💬 Live Chat (soon available)</li>
+					</ul>
+				</div>
+				<div id="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29425.952172626206!2d86.1507746!3d22.793420200000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e57d871b6e3d%3A0xb00ff3eb72cf180f!2sKunal%20i%20Technology%20Lab!5e0!3m2!1sen!2sin!4v1750258274828!5m2!1sen!2sin"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+		</div>			
+		
+							<!--Footer area-->
+					
+		<div id="summary">
+			<div class="summary-content" id="sumabout">
+				<h2>ABOUT US</h2>
+				<hr>
+				<a href="index.html" id="logo2"><img src="logo1.png"/></a>
+				<h2 id="logo-name2"><a href="index.html">MY DUSTBIN</a></h2>
+				<p>We are a dedicated team focused on making your surroundings cleaner and healthier by offering reliable garbage pickup services straight from your doorstep. Our goal is to simplify waste management with timely service, friendly staff, and a cleaner environment for all.
+
+</p>
+
+			
+			</div>
+			<div class="summary-content">
+				<h2>COMPANY LINKS</h2>
+				<hr>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#middle">How It Works</a></li>
+						<li><a href="#service">Services</a></li>
+					</ul>
+					<ul>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#costumer">Costumer Care</a></li>
+						<li><a href="mailto:abc@gmail.com?subject=Help&cc=xyz@gmail.com&bcc=jkl@gmailcom">Mail Us</a></li>
+
+					</ul>
+			</div>
+			<div class="summary-content" id="suminfo">
+				<h2>CONTACT INFO</h2>
+				<hr>
+				<p>Address:&nbspAshiyana More, Adityapur, Jamshedpur, Jharkhand - 832109</p>
+				<p>Mobile No:&nbsp<a href="tel:+919856324756">+91 9856324756</a></p>
+				<p>E-mail:&nbsp<a href="mailto:abc@gmail.com?subject=Help&cc=xyz@gmail.com&bcc=jkl@gmailcom">abc@gmail.com</a></p>
+			</div>
+		</div>
+			
+							<!--footer area-->
+		<div id="footer">
+				<p>&copy MY DUSTBIN 2025</p>
+		
+		</div>
+					
+				
+	<body>
+</html>
+		
+		
+					
+			
