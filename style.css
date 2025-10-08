@@ -1,0 +1,364 @@
+body{
+    background: yellow;
+}
+
+
+.header{
+    padding: 5px 0 1px 0;
+    background: linear-gradient(to right,rgb(182, 174, 174) 10%,green 100%);
+    z-index:1000;
+}
+
+.logo{
+    height: 80px;
+    width:  30x;
+    display: inline-block;
+    
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.header h2{
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#ul{
+    width: 100%;
+    height: 100%;
+    padding: 24px 0 0 0;
+}
+
+
+.header ul li{
+        display: inline-block;
+        padding-left: 15px;
+        color: black;
+}
+
+.header ul li a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#btn{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+     padding: 12px 0;
+    background: #FFA500;
+    border-radius: 8px;
+    margin-top: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Slide shows */
+.slideshow{
+    text-align: center;
+    background: white;
+}
+.slideshow img{
+    width: 80%;
+    height: 425px;
+}
+
+.slideshow .row:first-child .col{
+    padding: 15px 25px;
+    background: white;
+}
+
+.slideshow .row:nth-child(2) .col{
+    background: white;
+    padding-bottom: 10px;
+
+}
+
+.slideshow .row:nth-child(2) .col h1{
+    font-weight: bold;
+}
+.slideshow .row:nth-child(2) p{
+            font-size: 30px;
+            font-weight: 500;
+}
+
+.slideshow .row:last-child{
+    text-align: center;
+}
+#book{
+    width: 180px;
+    padding: 12px 22px;
+    background: green;
+    border-radius: 10px;
+    font-weight: smooth;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+}
+
+/* How It's Works */
+
+.worksection{
+    background: url("about.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    
+}
+.worksection .row:first-child{
+    padding: 30px 0 20px;
+}
+.worksection .row:nth-child(2){
+    padding: 65px 0;
+}
+
+.worksection .row:nth-child(2) h3{
+    padding: 5px 0;
+}
+
+.worksection img{
+    width: 25%;
+    height: 70%;
+}
+
+.worksection .row:last-child{
+    text-align: left;
+    padding: 50px 0 35px;
+
+}
+
+.worksection .row:last-child li{
+    padding: 5px 0 4px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+              /* Our Services */
+.service{
+    background:url("about.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 2px;
+}
+
+.service .row:first-child{
+    padding:20px 0 15px;
+    text-align: center;
+}
+.service img{
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+    padding-top: 10px;
+} 
+
+
+#hello{
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    padding-bottom: 0px; 
+    margin-top:20px;
+}
+
+.service .row{
+    gap: 12%;
+    margin-bottom: 5px;
+}
+#hello p{
+    text-align: left;
+    padding: 10px 0 0 30px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 650;
+
+}
+
+#up{
+    padding: 0px 0 0 30px;
+}
+
+#hello:hover{
+    background: #EDFAE8;
+    color: orange;
+}
+
+              /* About */
+
+.about{
+    background: url("about.png") no-repeat;
+    padding: 30px 0;
+    background-size: 100% 100%;
+}
+
+.about .row:first-child{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.about .row:nth-child(2){
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.about .row:last-child{
+    padding: 40px 0;
+}
+
+.about .row:last-child li{
+    padding: 5px 0 5px 0;
+    font-size: 25px;
+    font-weight: 450;
+}
+
+                /* costumer care */
+
+
+.costumer{
+    background: #F5F5DC;
+    padding: 30px 0;
+    color: #6E5F3C;
+}
+
+.costumer .row:first-child{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.costumer .row:nth-child(2){
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    padding: 0 0 50px 0;
+}
+
+.costumer .row:last-child{
+    padding: 50px 0 10px;
+    text-align: center;
+}
+
+.costumer .row:last-child li{
+    list-style-type: none;
+    text-align: left;
+    padding: 15px 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.costumer  iframe{
+    width: 100%;
+    height: 100%;
+}
+
+                /* summary */
+
+.summary{
+    background: #1C1C1C;
+    color: white;
+    padding: 35px 0 0 0;
+}
+
+hr{
+    width: 130px;
+    background-color: red;
+    height:10px;
+    border-radius: 10px;
+    margin: 0 0 5px 10px;
+    border: 2px solid white;
+    opacity: 1;
+}
+
+#www:first-child img{
+    width: 100px;
+    height:100px;
+}
+
+#www:first-child h2{
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    
+    padding: 14px 0 0 0;
+}
+
+#www:first-child p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+#www:nth-child(2) ul{
+        display: inline-block;
+        padding: 10px 0 0 20px;
+        margin-left: 20px;
+}
+
+
+#www:nth-child(2) li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold; 
+    margin-bottom: 10px;   
+    color: white;  
+}
+
+
+
+#www:last-child p{
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#www:last-child a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Footer */
+
+.footer{
+    padding: 25px 0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: #111111;
+}
+
+/* for sticky */
+#arrow{
+        height: 65px;
+        width: 65px;
+        display: inline;
+        position: fixed;
+        top:80%;
+        left: 95%;
+        background: lightcoral;
+        z-index: 900;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 0px;
+        font-size: 50px;
+        animation: bounce 2s ease-in-out infinite;
+        cursor: pointer;
+}
+
+@keyframes bounce{
+    0%{
+        top:600px;
+        left:95%;
+    }
+
+    100%{
+        top: 550px;
+        left: 95%;
+    }
+}
