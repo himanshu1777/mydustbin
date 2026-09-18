@@ -23,7 +23,7 @@
                             <li><a href="#work">HOW ITS WORKS</a></li>
                             <li><a href="#service">SERVICES</a></li>
                             <li><a href="#about">ABOUT US</a></li>
-                            <li><a href="#costumer">COSTUMER CARE</a></li>
+                            <li><a href="#costumer">CUSTOMER CARE</a></li>
                             <li><a href="mailto:abc@gmail.com?query=Help&cc=xyz@gmail.com&bcc=jkl@gmail.com">MAIL US</a></li>
 
                         </ul>
@@ -140,60 +140,6 @@
                 </div>
 
 
-                 <!-- Booking Pop up Window Start -->
-
-    
-     <div class="book-container">
-            <div class="booking">
-                <h2>My Dustbin Booking Platform</h2>
-                <form class="book-form">
-
-                    <div>
-                        <label for="TOW">Types of Waste</label><br>
-                        <input type="text" placeholder="Type of Waste" name='TOW' id='tow' readonly>
-                    </div>
-
-
-                    <div>
-                        <label for="address">Address</label><br>
-                        <textarea placeholder="Enter your Address" name="address" rows="5" required></textarea>
-                    </div>
-
-
-                    <div class="date-time">
-
-                        <div>
-                            <label for="date">Enter Your Date to Schedule</label><br>
-                            <input type="date" name="date" required>
-                        </div>
-
-                        <div id="time">
-                            <label for="time">Timing</label><br>
-                            <input type="time" name="time" required>
-                        </div>
-
-                    </div>
-
-                    
-                    <div id="book-submit">
-                        <label for="submit"></label>
-                        <input type="submit" value="Book">
-                    </div>
-
-                </form>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-    <!-- Booking Pop up Window End  -->
 
         </div>
     </section>
@@ -225,12 +171,12 @@
         </div>
     </section>
 
-                <!--Costumer Care-->
+                <!--Customer Care-->
     <section class="costumer" id="costumer">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1><u>COSTUMER CARE</u></h1>
+                    <h1><u>CUSTOMER CARE</u></h1>
                 </div>
             </div>
              <div class="row">
@@ -277,7 +223,7 @@
                     </ul>
                     <ul>
                         <li><a href='#about'>About Us</a></li>
-                        <li><a href='#costumer'>Costumer Care</a></li>
+                        <li><a href='#costumer'>Customer Care</a></li>
                         <li><a href='#mailto:abc@gmail.com?query=Help&cc=xyz@gmail.com&bcc=jkl@gmail.com'>Mail Us</a></li>
                     </ul>
                 </div>
@@ -304,6 +250,63 @@
             </div>
         </div>
     </footer>
+
+
+    
+                 <!-- Booking Pop up Window Start -->
+
+    
+     <div class="book-container">
+            <div class="booking">
+                <h2>My Dustbin Booking Platform</h2>
+                <form class="book-form">
+
+                    <div>
+                        <label for="TOW">Types of Waste</label><br>
+                        <input type="text" placeholder="Type of Waste" name='TOW' id='tow' readonly>
+                    </div>
+
+
+                    <div>
+                        <label for="address">Address</label><br>
+                        <textarea placeholder="Enter your Address" name="address" rows="5" style='resize:none;' required ></textarea>
+                    </div>
+
+
+                    <div class="date-time">
+
+                        <div>
+                            <label for="date">Enter Your Date to Schedule</label><br>
+                            <input type="date" name="date" id='date' required>
+                        </div>
+
+                        <div id="time">
+                            <label for="time">Timing</label><br>
+                            <input type="time"  id='ti' required>
+                        </div>
+
+                    </div>
+
+                    
+                    <div id="book-submit">
+                        <label for="submit"></label>
+                        <input type="submit" value="Book" id="final-submit">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Booking Pop up Window End  -->
 
 
 
@@ -339,14 +342,16 @@
 
    
 
-<!-- ---------------------------------------------------------------------------- -->
-<!-- ================================================================================== -->
+ <!--- 
+ 
+ ============ ============================================ ============================== ===========
+ 
+    --------------------------- - Script for Login Popup Window -----------------------------------
 
+=================== ========================================= =======================================
 
-                        <!-- Script for Login Popup Window  -->
+-->
 
-<!-- ======================================================================================== -->
-<!-- ------------------------------------------------------------------------------- -->
 <script>
   const modal = document.getElementById('loginModal');
   const openBtn = document.getElementById('btn');
@@ -359,17 +364,20 @@
   closeBtn.onclick = () => modal.style.display = 'none';
 
   // Close modal if user clicks outside box
-  window.onclick = (e) => {
-    if (e.target === modal) modal.style.display = 'none';
-  };
 
+  window.addEventListener('click',(e)=>{
+         if (e.target === modal){
+        modal.style.display = 'none';
+        modal.style.cursor = 'pointer';
+    }
+  })
 
 
 
 </script>
 
   
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 
 <!-------------------------  Firebase Database   -------------------------------->
 
@@ -377,8 +385,10 @@
 <script type="module">
 
   // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.0/firebase-app.js";
-  import { getAuth,signInWithEmailAndPassword,createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/12.17.0/firebase-auth.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+  import {getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+   
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -394,11 +404,21 @@
     measurementId: "G-P69NQR5NPE"
   };
 
-  // Initialize Firebase
+
+    //   Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
+  const db = getFirestore(app);
 
 
+
+/* 
+  ====================== =============================== ============================== ======
+
+  -------------------------- LOGIN POPUP SCRIPT START -----------------------------------------
+
+  ===================== ============================= ========================= ====================
+*/
 
 
 //  To check wheter user is logged in or want to signup
@@ -464,28 +484,32 @@ toggleModeBtn.addEventListener('click',(e)=>{
    email.value="";
     password.value="";
 });
-</script>
-
-
-<!--   ---------------------------------------------------------------------------- -->
-   <!---------------------- Login Popup Window Scipt End ----------------->
-<!-- --------------------------------------------------------------------------------- -->
 
 
 
+/*   ========================== ============================== ============================== ==== 
 
-<!-- ------------------------------------------------------------------------------------ -->
- <!-- ============== Booking popup Window Scipt Start =================================== -->
+    ----------------------------- Login Popup Window Scipt End -----------------------------
+  
+    =========================== =========================== ================================= =====
+*/
 
-<!-- ---------------------------------------------------------------------------------------- -->
 
 
-<script>
+/*  ===================== ======================================== ================================ 
+
+   ------------------------- Booking popup Window Script Start -----------------------------------
+
+  ======================= ======================================== =====================================
+
+*/
+
 
     const booking = document.querySelectorAll('.hello');
     const bookingWindow = document.querySelector('.book-container');
     const TOW = document.querySelector('#tow');
     const bookContainer = document.querySelector('.book-container');
+
 
     booking.forEach((book)=>{
 
@@ -509,12 +533,76 @@ toggleModeBtn.addEventListener('click',(e)=>{
         
     }
 
-    window.onclick =(e) =>{
+    window.addEventListener('click',(e) =>{
         if(e.target === bookContainer) bookingWindow.style.display = 'none';
+    });
+
+
+
+
+/* ======================  ================= ===================   ======================================
+
+    ---------------------- BOOKING REQUEST PICKUP DATA STORAGE IN DATABASE SCRIPT ----------------------
+
+    ===================== ================== ======================= ========================================
+    
+    
+*/
+
+
+
+    const address = document.querySelector('textarea');
+    const date = document.querySelector('#date');
+    const time = document.querySelector('#ti');
+    const bookForm = document.querySelector('.book-form');
+    const bookSubmit = document.querySelector('#final-submit');
+
+
+
+
+
+    bookForm.addEventListener('submit',saveBooking)
+
+    async function saveBooking(e) {
+
+        e.preventDefault(); // Prevents page reload on submit
+      bookSubmit.disabled = true;
+      bookSubmit.value = "Saving...";
+
+    try {
+    // This creates a new document inside the "bookings" collection
+        const docRef = await addDoc(collection(db, "bookings"), {
+            typeOfWaste: TOW.value,      // Input 1
+            bookingDate: date.value,       // Input 2
+            bookingTime: time.value,       // Input 3
+            customerAddress: address.value,   // Input 4
+            status: "pending",         // Useful extra field to track state
+            createdAt: serverTimestamp() // Tracks when the form was submitted
+        });
+
+        // console.log("Booking saved successfully with ID: ", docRef.id);
+        alert("Your booking was submitted successfully!");
+        bookForm.reset();
+        bookingWindow.style.display='none';
+
+        }catch (error) {
+            console.error("Error adding booking: ", error);
+            alert("Failed to submit booking.");
+        }finally{
+            bookSubmit.disabled= false; 
+            bookSubmit.value= 'Book';
+        }
     }
 
-</script>
 
+  
+
+ </script>
+
+
+<!-- BOOTSTRAP SCRIPT  -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
 </body>
 </html>
